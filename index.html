@@ -65,7 +65,7 @@
             <div class="modal-wrapper">
               <button class="modal-btn" data-modal-close>x</button>
               <form class="modal-form">
-                <p>Залиште свої дані, ми вам передзвонимо</p>
+                <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                 <label>
                   Ім'я
                   <input type="text" name="Name" readonly />
@@ -80,13 +80,21 @@
                 </label>
                 <label for="">
                   Коментар
-                  <textarea name="Введіть текст" id="" cols="10" rows="10"></textarea>
+                  <textarea name="Введіть текст" id="" rows="10">Залиште коментар</textarea>
                 </label>
-                <input type="checkbox" id="aggree" name="aggree" value="yes" />
-                <label for="aggree">
-                  Погоджуюся з розсилкою та приймаю
-                  <a href="" target="_blank" rel="noopener">Умови договору</a>
-                </label>
+                <div class="aggree-box">
+                  <input
+                    class="aggree-checkbox"
+                    type="checkbox"
+                    id="aggree"
+                    name="aggree"
+                    value="yes"
+                  />
+                  <label class="aggree-label" for="aggree">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="" target="_blank" rel="noopener">Умови договору</a>
+                  </label>
+                </div>
                 <button type="submit">Надіслати</button>
               </form>
             </div>
