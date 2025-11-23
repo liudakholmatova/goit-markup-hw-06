@@ -199,7 +199,6 @@ background-color: rgb(57, 138, 201);
     left: 50%;
     transform: translate(-50%,-50%);
     width: 528px;
-    height: 581px;
     background-color: #fff;
     border-radius: 4px;
 }
@@ -217,8 +216,10 @@ background-color: rgb(57, 138, 201);
     background-color: transparent;
     border: 1px solid rgba(0,0,0, 0.1);
     border-radius: 50%;
-   
 }
+
+/* MODAL FORM */
+
 /* .modal-form {
     margin: 40px;
 }
