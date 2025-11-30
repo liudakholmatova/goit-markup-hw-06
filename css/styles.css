@@ -229,16 +229,40 @@ background-color: rgb(57, 138, 201);
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 25px;
 }
-.form-group,
+.form-modal-group,
  .form-type,
   .form-policy-group {
     display: block;
     margin-bottom: 20px;
 }
-
-
-
+.form-modal-group {
+    position: relative;
+}
+.form-modal-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-modal-input {
+    width: 100%;
+    padding: 10px 30px; 
+    border-radius: 5px;
+    border: 1px solid #ff6c00;
+    outline: transparent;
+}
+.form-modal-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    fill: #303030;
+}
+.warning,
+.error {
+    position: absolute;
+    opacity: 0;
+}
 
 
 /*  секція особливості*/
