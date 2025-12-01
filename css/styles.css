@@ -201,7 +201,7 @@ background-color: rgb(57, 138, 201);
     left: 50%;
     transform: translate(-50%,-50%);
     width: 528px;
-    height: 560px; 
+    height: 620px; 
     background-color: #fff;
     border-radius: 20px;
     padding: 25px;
@@ -249,7 +249,7 @@ background-color: rgb(57, 138, 201);
     width: 100%;
     padding: 10px 30px; 
     border-radius: 5px;
-    border: 1px solid #ff6c00;
+    border: 1px solid #2196F3;
     outline: transparent;
 }
 .form-modal-icon {
@@ -263,7 +263,39 @@ background-color: rgb(57, 138, 201);
     position: absolute;
     opacity: 0;
 }
+.textarea {
+    resize: none;
+}
 
+.form-policy-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.custom-checkbox {
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+outline: 2px solid #2196F3;
+outline-offset: -2px;
+transition: background-color 300ms ease-in;
+}
+.checkbox:checked+.custom-checkbox {
+    background-color: #2196F3;
+}
+.custom-checkbox-icon {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+.checkbox:checked+.custom-checkbox .custom-checkbox-icon {
+    opacity: 1;
+}
+.form-policy-desc {
+    font-size: 16px;
+}
 
 /*  секція особливості*/
 

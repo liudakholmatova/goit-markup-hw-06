@@ -130,8 +130,26 @@
                     <span></span>
                   </span>
                 </label>
+
+                <label class="form-modal-group" for="comment">
+                  <span class="form-modal-label">Коментар</span>
+                  <textarea
+                    id="comment"
+                    name="comment"
+                    class="form-modal-input"
+                    rows="4"
+                    minlength="5"
+                    maxlength="500"
+                    placeholder="Напишіть свій коментар..."
+                    aria-describedby="comment-hint comment-count"
+                    required
+                  ></textarea>
+                </label>
+
+                <!--Політика приватності чекбоксу-->
+
                 <label class="form-policy-group">
-                  <input type="checkbox" />
+                  <input class="checkbox" type="checkbox" />
                   <span class="custom-checkbox">
                     <svg class="custom-checkbox-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#check"></use>
