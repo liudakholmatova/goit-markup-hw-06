@@ -261,7 +261,30 @@ background-color: rgb(57, 138, 201);
 .warning,
 .error {
     position: absolute;
+   bottom: -22px;
+   left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   transition: 400ms ease-out;
+}
+.error {
     opacity: 0;
+    color: red;
+}
+.warning {
+    /* opacity: 0; */
+    color: #2196F3;
+}
+.form-modal-input:invalid~.error {
+    opacity: 1;
+}
+
+.warning-icon,
+.error-icon {
+    display: inline-flex;
+    fill: currentColor;
 }
 .textarea {
     resize: none;
