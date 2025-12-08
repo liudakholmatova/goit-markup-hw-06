@@ -69,8 +69,8 @@
 
               <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
               <form action="">
+                <!-- 1 інпут -->
                 <label class="form-modal-group">
-                  <!--  -->
                   <span class="form-modal-label">Ім'я</span>
                   <input
                     class="form-modal-input"
@@ -95,9 +95,16 @@
                     <use href="./images/modalsprite.svg#name"></use>
                   </svg>
                 </label>
+                <!-- інпут 2 -->
                 <label class="form-modal-group">
                   <span class="form-modal-label">Телефон</span>
-                  <input class="form-modal-input" type="phone" name="user-phone" />
+                  <input
+                    class="form-modal-input"
+                    type="tel"
+                    name="user-phone"
+                    placeholder="+380 __ ___ __ __"
+                    required
+                  />
                   <span class="warning">
                     номер повинен мати 12 чисел
                     <svg class="warning-icon" width="20px" height="20px">
@@ -116,7 +123,7 @@
                 </label>
                 <label class="form-modal-group">
                   <span class="form-modal-label">Пошта</span>
-                  <input class="form-modal-input" type="mail" name="user-mail" />
+                  <input class="form-modal-input" type="email" name="user-mail" />
                   <span class="warning">
                     <svg class="warning-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#warning"></use>
