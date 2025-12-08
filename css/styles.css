@@ -274,13 +274,18 @@ background-color: rgb(57, 138, 201);
     color: red;
 }
 .warning {
-    /* opacity: 0; */
+     opacity: 0; 
     color: #2196F3;
+}
+.form-modal-input:focus~.warning {
+    opacity: 1;
 }
 .form-modal-input:invalid~.error {
     opacity: 1;
 }
-
+.form-modal-input:not(:placeholder-shown)~.warning {
+    opacity: 0;
+}
 .warning-icon,
 .error-icon {
     display: inline-flex;

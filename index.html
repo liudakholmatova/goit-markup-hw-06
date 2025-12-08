@@ -70,8 +70,15 @@
               <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
               <form action="">
                 <label class="form-modal-group">
+                  <!--  -->
                   <span class="form-modal-label">Ім'я</span>
-                  <input class="form-modal-input" type="text" name="user-name" minlength="3" />
+                  <input
+                    class="form-modal-input"
+                    type="text"
+                    name="user-name"
+                    minlength="3"
+                    placeholder=""
+                  />
                   <span class="warning">
                     Ім'я повинно складатись мінімум з трьох символів
                     <svg class="warning-icon" width="20px" height="20px">
@@ -92,11 +99,13 @@
                   <span class="form-modal-label">Телефон</span>
                   <input class="form-modal-input" type="phone" name="user-phone" />
                   <span class="warning">
+                    номер повинен мати 12 чисел
                     <svg class="warning-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#warning"></use>
                     </svg>
                   </span>
                   <span class="error">
+                    ви ввели некоректні дані
                     <svg class="error-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#error"></use>
                     </svg>
