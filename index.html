@@ -101,12 +101,13 @@
                   <input
                     class="form-modal-input"
                     type="tel"
-                    name="user-phone"
-                    placeholder="+380 __ ___ __ __"
+                    name="tel"
+                    pattern="[0-9]{12}"
+                    placeholder=""
                     required
                   />
                   <span class="warning">
-                    номер повинен мати 12 чисел
+                    введіть номер телефона
                     <svg class="warning-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#warning"></use>
                     </svg>
@@ -121,10 +122,12 @@
                     <use href="./images/modalsprite.svg#phone"></use>
                   </svg>
                 </label>
+                <!--інпут 3 -->
                 <label class="form-modal-group">
                   <span class="form-modal-label">Пошта</span>
-                  <input class="form-modal-input" type="email" name="user-mail" />
-                  <span class="warning">
+                  <input class="form-modal-input" type="email" name="email" />
+                  <span class="warning"
+                    >введіть емайл
                     <svg class="warning-icon" width="20px" height="20px">
                       <use href="./images/modalsprite.svg#warning"></use>
                     </svg>
